@@ -1,14 +1,16 @@
 public class Product {
-   public double price;
+  private double price;
 
     public double getPrice() {
         return price;
     }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
     public double getPrice(double quantity){
+
         return price*quantity;
     }
+    public void setPrice(double price) {
+        this.price = price;
+
+    }
+
 }
