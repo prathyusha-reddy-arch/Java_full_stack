@@ -1,31 +1,14 @@
-package com.javabackend;
-import com.java.assn02.*;
-import com.java.assn31.Student;
+package com.java.assn01;
+
 import java.util.Scanner;
-import com.java.assn01.*;
 
-
-
-public class Main {
-
+public class assn01Main {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        //Student.java file assignment 1
-        Student s= new Student();
-        System.out.println("getname method "+s.getName());
-        //SETTING THE NEW NAME
-        String p_name = sc.next();
-        s.setName(p_name);
-        System.out.println(p_name);
-        System.out.println("after setting new name setname method "+s.getName());
-
         //Assignment 2
-        subDepartmentClass sd=new subDepartmentClass();
+        subDepartmentClass sd = new subDepartmentClass();
         int x = sd.getDepartmentSize();
         System.out.println(x);
-
+        Scanner sc= new Scanner(System.in);
         //Product class
         Product product = new Product();
         //getting price
@@ -48,13 +31,5 @@ public class Main {
         poly2 pol = new poly2();
         pol.poly();
 
-        implementationClass ic=new implementationClass();
-        ic.mammals();
-        ic.herbs();
-
-        Child c=new Child();
-        Child c1=new Child(65);
-        System.out.println(c);
-        System.out.println(c1);
     }
 }
