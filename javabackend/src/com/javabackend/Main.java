@@ -1,13 +1,14 @@
 package com.javabackend;
 import com.java.assn31.Student;
 import java.util.Scanner;
+import com.java.assn01.*;
 
 
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
         Scanner sc = new Scanner(System.in);
 
         //Student.java file assignment 1
@@ -18,5 +19,34 @@ public class Main {
         s.setName(p_name);
         System.out.println(p_name);
         System.out.println("after setting new name setname method "+s.getName());
+
+        //Assignment 2
+        subDepartmentClass sd=new subDepartmentClass();
+        int x = sd.getDepartmentSize();
+        System.out.println(x);
+
+        //Product class
+        Product product = new Product();
+        //getting price
+        double price = product.getPrice();
+        System.out.println("Initial price : " + price);
+
+        System.out.println("Enter price to set: ");
+        double p = sc.nextDouble();
+        //setting price
+        product.setPrice(p);
+        System.out.println("New price" + product.getPrice());
+
+        System.out.println("Enter quantity :");
+        double quantity = sc.nextDouble();
+        //changing price according to quantity
+        double pd = product.getPrice(quantity);
+        System.out.println("Price based on quantity " + pd);
+
+        //implementing method overriding
+        poly2 pol = new poly2();
+        pol.poly();
+
+
     }
 }
