@@ -1,4 +1,5 @@
 package com.javabackend;
+import com.java.assn02.*;
 import com.java.assn31.Student;
 import java.util.Scanner;
 import com.java.assn01.*;
@@ -47,6 +48,9 @@ public class Main {
         poly2 pol = new poly2();
         pol.poly();
 
+        implementationClass ic=new implementationClass();
+        ic.mammals();
+        ic.herbs();
 
     }
 }
