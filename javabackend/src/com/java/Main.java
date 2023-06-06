@@ -1,4 +1,4 @@
-package com.javabackend;
+package com.java;
 
 
 public class Main {
