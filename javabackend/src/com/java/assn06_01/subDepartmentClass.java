@@ -1,4 +1,4 @@
-package com.java.assn01;
+package com.java.assn06_01;
 
 public class subDepartmentClass extends Department {
     int departmentSize=100;

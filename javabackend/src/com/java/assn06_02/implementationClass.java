@@ -1,4 +1,4 @@
-package com.java.assn02;
+package com.java.assn06_02;
 
 public class implementationClass implements Animal,Plants{
     public  void mammals(){
@@ -8,7 +8,7 @@ public class implementationClass implements Animal,Plants{
         System.out.println("Cow eats Herbs");
     }
     statistics st=new statistics();
-   // System.out.println(st.area(5));
+   //System.out.println(st.area(5));
 
 
 }

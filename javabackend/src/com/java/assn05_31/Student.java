@@ -1,6 +1,5 @@
-package com.java.assn31;
+package com.java.assn05_31;
 
-import java.util.Scanner;
 public class Student {
     String name="Prathyusha";
     public  String getName()

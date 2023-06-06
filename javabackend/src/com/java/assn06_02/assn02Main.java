@@ -1,5 +1,4 @@
-package com.java.assn02;
-import com.java.assn02.*;
+package com.java.assn06_02;
 
 public class assn02Main {
 

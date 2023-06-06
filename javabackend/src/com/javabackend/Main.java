@@ -1,16 +1,11 @@
 package com.javabackend;
-import com.java.assn02.*;
-import com.java.assn31.Student;
-import java.util.Scanner;
-import com.java.assn01.*;
-
 
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+       /* Scanner sc = new Scanner(System.in);
 
         //Student.java file assignment 1
         Student s= new Student();
@@ -55,6 +50,7 @@ public class Main {
         Child c=new Child();
         Child c1=new Child(65);
         System.out.println(c);
-        System.out.println(c1);
+        System.out.println(c1);*/
+
     }
 }

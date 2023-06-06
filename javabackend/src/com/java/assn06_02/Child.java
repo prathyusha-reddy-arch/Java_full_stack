@@ -1,4 +1,4 @@
-package com.java.assn02;
+package com.java.assn06_02;
 
 public class Child extends Parent{
     int id2;
@@ -10,6 +10,7 @@ public class Child extends Parent{
    public Child(int x){
         this.id2=x;
    }
+  // System.out.println("id2");
 
 
 
