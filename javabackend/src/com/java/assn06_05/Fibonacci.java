@@ -1,8 +1,6 @@
 package com.java.assn06_05;
 
-import java.util.Scanner;
-
-public class Q3_fibo {
+public class Fibonacci {
   int f1,f2,f3;
     public void fibonacci(int x){
        f1=0;
@@ -17,7 +15,7 @@ public class Q3_fibo {
         }
     }
     public static void main(String[] args){
-        Q3_fibo q=new Q3_fibo();
+        Fibonacci q=new Fibonacci();
        // Scanner sc=new Scanner(System.in);
         q.fibonacci(10);
     }
