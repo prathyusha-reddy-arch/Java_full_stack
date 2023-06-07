@@ -3,7 +3,7 @@ package com.java.assn06_06;
 public class ArrayImplementation {
     int arr[]=new int[]{1,34,67,23,98,7,67,7,98,97};
     //implementing by sorting an array
-    public void largeSmall(){
+   /* public void largeSmall(){
         System.out.println("Largest and smallest with sorting");
         int temp=0;
         for(int i=0;i<arr.length-1;i++){
@@ -21,10 +21,10 @@ public class ArrayImplementation {
         System.out.println("\n");
         System.out.println("Largest Number: "+ arr[0]);
         System.out.println("Largest Number: "+ arr[arr.length-1]);
-    }
+    }*/
     //implementing without sorting
     public void largestSmallest() {
-        System.out.println("Largest and smallest without sorting");
+        System.out.println("Largest and smallest number");
         int small = arr[0];
         int large = arr[0];
         for (int i = 0; i < arr.length; i++) {
@@ -102,7 +102,7 @@ public class ArrayImplementation {
         ArrayImplementation ar=new ArrayImplementation();
 
         ar.largestSmallest();
-        ar.largeSmall();
+       // ar.largeSmall();
         ar.reverseArray();
        // ar.rotateRev();
         ar.rotateArray(2);
