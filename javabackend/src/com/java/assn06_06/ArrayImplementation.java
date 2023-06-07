@@ -37,9 +37,9 @@ public class ArrayImplementation {
         System.out.println("Largest Number: "+large);
     }
 
-    //Reverse an array
+    //Reverse an arraywithout rotation
     public void reverseArray(){
-        System.out.println("Reversed Array without rotation");
+        System.out.println("Reversed Array" );
         int newArr[] =new int[arr.length];
         for(int i=arr.length-1,j=0;i>=0;i--,j++){
             newArr[j]=arr[i];
