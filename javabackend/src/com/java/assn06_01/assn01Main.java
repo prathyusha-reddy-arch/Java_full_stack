@@ -7,7 +7,9 @@ public class assn01Main {
         //Assignment 2
         subDepartmentClass sd = new subDepartmentClass();
         int x = sd.getDepartmentSize();
-        System.out.println(x);
+        System.out.println("Department size: "+x+"\n");
+
+        System.out.println("getter setter overloading");
         Scanner sc= new Scanner(System.in);
         //Product class
         Product product = new Product();
@@ -25,9 +27,10 @@ public class assn01Main {
         double quantity = sc.nextDouble();
         //changing price according to quantity
         double pd = product.getPrice(quantity);
-        System.out.println("Price based on quantity " + pd);
+        System.out.println("Price based on quantity " + pd +"\n");
 
         //implementing method overriding
+        System.out.println("Implementing polymorphism");
         poly2 pol = new poly2();
         pol.poly();
 
