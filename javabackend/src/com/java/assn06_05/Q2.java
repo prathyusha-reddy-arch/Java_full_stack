@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Q2 {
     int age;
+
     public void personAge(int age){
         this.age=age;
         if(age>0) {
@@ -18,9 +19,13 @@ public class Q2 {
     }
     public static void main(String[] args){
         Q2 q=new Q2();
+
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter age : ");
         int x=sc.nextInt();
         q.personAge(x);
+
+
+
     }
 }

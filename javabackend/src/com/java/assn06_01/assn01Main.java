@@ -31,8 +31,9 @@ public class assn01Main {
 
         //implementing method overriding
         System.out.println("Implementing polymorphism");
-        poly2 pol = new poly2();
+        poly1 pol = new poly2();
         pol.poly();
+       // pol.poly2(); --cannot access poly2 which implements the overriding of the function.
 
     }
 }

@@ -10,4 +10,5 @@ public class staticImpl {
     static {
         System.out.println(staticMethod(6));
     }
+
 }
