@@ -1,10 +1,11 @@
 package com.java.strings06_08;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class StringsMain {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws FileNotFoundException {
         Scanner sc=new Scanner(System.in);
        String str=sc.next();
 
@@ -25,6 +26,9 @@ public class StringsMain {
         //isrotation or not
         StringRotation ss=new StringRotation();
         System.out.println("Is rotation "+ss.isRotation("JavaJ2eeStrutsHibernate","StrutsHibernateJavaJ2ee"));
+
+        IOoperations io=new IOoperations();
+        io.readCSV();
 
     }
 }
