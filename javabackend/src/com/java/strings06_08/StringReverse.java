@@ -1,6 +1,4 @@
-package com.java.Strings06_08;
-
-import java.util.Arrays;
+package com.java.strings06_08;
 
 public class StringReverse {
 

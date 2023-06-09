@@ -1,4 +1,4 @@
-package com.java.assn05_31;
+package com.java.getterSetter05_31;
 
 public class Student {
     String name="Prathyusha";

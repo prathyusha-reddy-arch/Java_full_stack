@@ -1,4 +1,4 @@
-package com.java.assn06_06;
+package com.java.arrays06_06;
 
 public class ArrayImplementation {
     int arr[]=new int[]{1,34,67,23,98,7,67,7,98,97};

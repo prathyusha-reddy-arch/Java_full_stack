@@ -1,4 +1,4 @@
-package com.java.assn06_02;
+package com.java.inheritance06_02;
 
 class statistics {
    protected final double pi=3.14;

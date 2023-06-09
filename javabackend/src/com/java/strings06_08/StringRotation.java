@@ -1,4 +1,4 @@
-package com.java.Strings06_08;
+package com.java.strings06_08;
 
 public class StringRotation {
           public boolean isRotation(String str1,String str2){

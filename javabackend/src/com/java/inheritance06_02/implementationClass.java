@@ -1,4 +1,4 @@
-package com.java.assn06_02;
+package com.java.inheritance06_02;
 
 public class implementationClass implements Animal,Plants{
     public  void mammals(){

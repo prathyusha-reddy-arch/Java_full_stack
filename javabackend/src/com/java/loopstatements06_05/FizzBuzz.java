@@ -1,4 +1,4 @@
-package com.java.assn06_05;
+package com.java.loopstatements06_05;
 
 public class FizzBuzz {
 
