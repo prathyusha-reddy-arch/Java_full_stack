@@ -10,4 +10,6 @@ Project:
 One of the projects I have worked are Client Transfer Application which is an intranet application to serve different money transfer transactions like ACH,wires,Checks and journals.
 It is a single page web application which is developed using AngularJS and also separate webpages were developed for different money transfer transactions which can be used by financial advisors,bank specialists and field officers.
 I worked as the backend developer and developed the microservices and also involved in some of the frontend modules development.We developed different types of transactions using microservices which are hosted on the cloud.
-We used AWS, Relational DB which are sequel server DB instances. We also have Redis cache in front of all our DBs which handle all our read operations. We have separate DB instances for all read and write operations. And all the microservices which are hosted on AWS are hosted on auto scaling group, each microservices have their own scaling policies which are auto scaling group policies (JSON policies) to scale in and scale out instances
+We used AWS, Relational DB which are sequel server DB instances. We also have Redis cache in front of all our DBs which handle all our read operations.
+We have separate DB instances for all read and write operations. 
+And all the microservices which are hosted on AWS are hosted on auto scaling group, each microservices have their own scaling policies which are auto scaling group policies (JSON policies) to scale in and scale out instances
