@@ -22,10 +22,7 @@ public class StringReverse {
 
       int i=0;
       char temp=' ';
-
-
-
-            for(int j=0;j< c.length-1;j++){
+       for(int j=0;j< c.length-1;j++){
                 temp=c[j];
                 c[j]=c[j+1];
                 c[j+1]=temp;
