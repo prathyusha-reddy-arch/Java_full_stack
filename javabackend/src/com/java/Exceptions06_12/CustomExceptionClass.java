@@ -31,7 +31,7 @@ public class CustomExceptionClass extends ArithmeticException{
                 c.divideByZero();
             }
             catch(CustomExceptionClass e){
-                throw new CustomExceptionClass("NumberFormatException class");
+                throw new CustomExceptionClass("Exception in  class");
             }
     }
 
