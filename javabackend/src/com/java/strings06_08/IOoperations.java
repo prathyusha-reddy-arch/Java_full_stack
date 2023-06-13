@@ -16,12 +16,17 @@ public class IOoperations   {
         String line;
 
         Student1[] stu = new Student1[10];
-        for(int i=0;sc.hasNextLine();i++){
+        for(int i=1;sc.hasNextLine();i++){
             line= sc.nextLine();
             String[] arr = line.split(",");
+            //for(int j=0;j< arr.length;j++)
+
+            System.out.println(arr[0]);
             String firstName = arr[0];
+            System.out.println(arr[1]);
             String lastName = arr[1];
-            float gpa =Float.parseFloat(arr[2]) ;
+            System.out.println(arr[2]);
+            Float gpa = Float.valueOf(arr[2]);
             stu[i]= new Student1(firstName, lastName, gpa);
 
         }
