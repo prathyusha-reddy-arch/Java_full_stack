@@ -1,4 +1,4 @@
-package com.java.executorservice;
+package com.java.executorservice06_14;
 
 public class DeadLock {
     public static Object lock1 = new Object();
