@@ -12,7 +12,7 @@ public class VowelCount {
                     long vowelCount = s.chars()
                             .filter(c -> "aeiouAEIOU".indexOf(c) != -1)
                             .count();
-                    System.out.println(s + " (Number of vowels: " + vowelCount + ")");
+                    System.out.println(s + " Number of vowels: " + vowelCount );
             });
 
     }
