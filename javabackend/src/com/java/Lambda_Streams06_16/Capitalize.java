@@ -1,7 +1,6 @@
-package com.java.Lambda_Streams;
+package com.java.Lambda_Streams06_16;
 
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class Capitalize {
 

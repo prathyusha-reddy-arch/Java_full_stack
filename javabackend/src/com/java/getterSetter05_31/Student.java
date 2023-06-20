@@ -1,14 +1,36 @@
 package com.java.getterSetter05_31;
 
 public class Student {
-    String name="Prathyusha";
-    public  String getName()
-    {
-        return name;
+    String fname="Prathyusha";
+    String lname="Yanala";
+
+    public String getFname() {
+        return fname;
     }
-    public void setName(String name)
+
+    public String getLname() {
+        return lname;
+    }
+
+    public float gpa =3.8f;
+
+    public float getGpa() {
+        return gpa;
+    }
+
+    public Student(String fname, String lname, float gpa) {
+        this.fname=fname;
+        this.lname=lname;
+        this.gpa = gpa;
+    }
+
+
+
+    public void setName(String fname,String lname,float gpa)
     {
-        this.name=name;
+        this.fname=fname;
+        this.lname=lname;
+        this.gpa =gpa;
 
     }
 
