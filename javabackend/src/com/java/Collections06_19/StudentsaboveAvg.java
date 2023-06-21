@@ -1,10 +1,9 @@
-package com.java.Collections06_20;
+package com.java.Collections06_19;
 
 import com.java.getterSetter05_31.Student;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
 public class StudentsaboveAvg {
