@@ -1,6 +1,6 @@
 package com.java.Exceptions06_12;
 
-import org.omg.SendingContext.RunTime;
+//import org.omg.SendingContext.RunTime;
 
 public class CustomExceptionClass extends ArithmeticException{
 

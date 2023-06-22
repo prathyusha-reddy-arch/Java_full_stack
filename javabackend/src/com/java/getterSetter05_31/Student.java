@@ -34,6 +34,9 @@ public class Student {
 
     }
 
-
+    @Override
+    public String toString() {
+        return this.fname+" "+this.lname+" "+this.gpa;
+    }
 }
 
