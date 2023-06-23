@@ -16,6 +16,7 @@ public class StrLetterCount {
             count=0;
             if(97<=str.charAt(i) && str.charAt(i)<=122)  //considers only alphabets[a-z]
                 if(!map.containsKey( str.charAt(i))) {
+                  
                     for (int j = i + 1; j < str.length(); j++)
                         if (str.charAt(i) == str.charAt(j))
                             count++;
