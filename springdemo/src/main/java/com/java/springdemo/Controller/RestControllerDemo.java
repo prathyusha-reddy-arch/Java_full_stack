@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import  com.java.springdemo.model.ModelDemo;
+import java.util.ArrayList;
 
 @RestController
 public class RestControllerDemo {
@@ -14,23 +16,27 @@ public class RestControllerDemo {
 
 
     @RequestMapping(value="/getName" ,method= RequestMethod.GET)
-    public String getName(){
+    public ArrayList<String> getName(){
       return demoService.getName();
     }
 
     @RequestMapping(value="/postName",method=RequestMethod.POST)
-    public void setName(String name){
-       demoService.setName(name);
+
+    public boolean postName(ModelDemo m){
+
+        return demoService.setName(m.getName());
     }
 
     @RequestMapping(value="/putName" ,method= RequestMethod.PUT)
-    public void putName(String name){
-        demoService.putName(name);
+    public boolean putName(ModelDemo m){
+
+        return demoService.putName(m.getName());
     }
 
     @RequestMapping(value="/deleteName" ,method= RequestMethod.DELETE)
-    public void delName(String name){
-        demoService.delName(name);
+    public boolean delName(String name){
+
+        return demoService.delName(name);
     }
 
 }

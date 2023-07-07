@@ -14,21 +14,24 @@ public class ServiceDemo {
     }
 
 
-    public String getName() {
-        return al.get(0);
+    public ArrayList<String> getName() {
+        return al;
     }
 
-    public void setName(String name) {
-        al.add(name);
+    public boolean setName(String name) {
+
+        al=new ArrayList<>();
+        return al.add(name);
     }
 
-    public void putName(String name) {
-        if(!al.contains(name))
+    public boolean putName(String name) {
 
-        al.add(name);
+
+       return al.add(name);
     }
 
-    public void delName(String name) {
-        al.remove(name);
+    public boolean delName(String name) {
+
+        return al.remove(name);
     }
 }
