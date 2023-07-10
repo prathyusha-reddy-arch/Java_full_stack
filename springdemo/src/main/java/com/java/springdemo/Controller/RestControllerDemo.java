@@ -2,6 +2,8 @@ package com.java.springdemo.Controller;
 
 import com.java.springdemo.Service.ServiceDemo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +11,7 @@ import  com.java.springdemo.model.ModelDemo;
 import java.util.ArrayList;
 
 @RestController
+
 public class RestControllerDemo {
 
     @Autowired
@@ -16,8 +19,9 @@ public class RestControllerDemo {
 
 
     @RequestMapping(value="/getName" ,method= RequestMethod.GET)
-    public ArrayList<String> getName(){
-      return demoService.getName();
+    public ResponseEntity<ArrayList<String>> getName(){
+
+        return new ResponseEntity<>(demoService.getName(), HttpStatus.CREATED);
     }
 
     @RequestMapping(value="/postName",method=RequestMethod.POST)
