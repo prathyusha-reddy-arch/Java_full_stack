@@ -15,6 +15,7 @@ public class SubmissionServiceImpl implements SubmissionService{
     private SubmissionFormRepository submissionRepository;
     @Override
     public SubmissionForm getSubmission(String id) {
+
         return submissionRepository.getSubmission(id);
     }
 
@@ -29,7 +30,7 @@ public class SubmissionServiceImpl implements SubmissionService{
     }
 
     @Override
-    public SubmissionForm deleteSubmission(String id) {
+    public boolean deleteSubmission(String id) {
         return submissionRepository.deleteSubmission(id);
     }
 

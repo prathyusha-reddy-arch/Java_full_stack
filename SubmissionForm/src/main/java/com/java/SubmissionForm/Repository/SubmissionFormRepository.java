@@ -11,5 +11,5 @@ public interface SubmissionFormRepository {
     List<SubmissionForm > getAll();
     SubmissionForm  addSubmission(SubmissionForm submission);
     SubmissionForm  updateSubmission(SubmissionForm  submission);
-    SubmissionForm  deleteSubmission(String id);
+    boolean deleteSubmission(String name);
 }

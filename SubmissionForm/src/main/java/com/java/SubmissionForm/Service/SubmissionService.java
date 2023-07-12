@@ -12,7 +12,7 @@ public interface SubmissionService {
 
     SubmissionForm updateSubmission(SubmissionForm submission);
 
-    SubmissionForm deleteSubmission(String id);
+    boolean deleteSubmission(String id);
 
     List<SubmissionForm> getAll();
 }

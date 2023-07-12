@@ -1,14 +1,16 @@
 package com.java.SubmissionForm.Repository;
 
 import com.java.SubmissionForm.Model.SubmissionForm;
+import lombok.Data;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 @Repository
+
 public class SubmissionFormRepositoryImpl implements SubmissionFormRepository{
 
-    private Map<String, SubmissionForm> s = new HashMap<>();
+    public Map<String, SubmissionForm> s = new HashMap<>();
     @Override
     public SubmissionForm getSubmission(String id) {
         return s.get(id);
@@ -39,7 +41,15 @@ public class SubmissionFormRepositoryImpl implements SubmissionFormRepository{
     }
 
     @Override
-    public SubmissionForm deleteSubmission(String id) {
-        return s.remove(id);
+    public boolean deleteSubmission(String name) {
+
+        s.entrySet().stream().filter(es -> {
+            if(es.getValue().getConsultantName().equals(name)){
+                return true;
+            }
+            return false;
+        }).map(k -> k.getKey()).toList().forEach(s::remove);
+        return true;
+
     }
 }
